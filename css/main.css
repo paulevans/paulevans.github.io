@@ -1,0 +1,690 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@page {
+    size: letter portrait;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    background-color: slategray;
+    margin: auto;
+}
+
+/* .physicalAddress and .mobilePhone defined in private.css */
+.backgroundColourEdges {
+    background-color: #d7e4ed !important;
+}
+
+.backgroundColourForPortrait {
+    background-color: #d7e4ed !important;
+}
+
+.backgroundColourForSash {
+    background-color: #d7e4ed !important; /* !important for printing colour */
+}
+
+.backgroundShape {
+    position: absolute;
+    background-color: #ffffff !important;
+
+    left: 0px;
+    top: 40px;
+    width: 650px;
+    bottom: 0px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.backgroundShapeLeftMolding {
+    position: absolute;
+    background-color: #ffffff !important;
+    width: 110px;
+    height: 200px;
+    left: 0;
+    top: 0;
+    border-top-right-radius: 50px;
+}
+
+div.bottomHorizontalTimeLine {
+    min-height: 40px;
+    height: 40px;
+    margin-top: -24px;
+}
+
+div.bottomHorizontalTimeLine :nth-child(1) {
+    background-color: #7798b0 !important;
+    position: absolute;
+    left: 114px;
+    width: 4px;
+    height: 20px;
+    border-bottom-left-radius: 100%;
+}
+
+div.bottomHorizontalTimeLine :nth-child(2) {
+    background-color: #7798b0 !important;
+    position: absolute;
+    left: 118px;
+    width: 600px;
+    height: 4px;
+    bottom: 20px;
+}
+
+div.bottomHorizontalTimeLine :nth-child(3) {
+    background-color: #7798b0 !important;
+    position: absolute;
+    right: 80px;
+    width: 20px;
+    height: 20px;
+    bottom: 12px;
+    border-radius: 50%;
+}
+
+.goal {
+    left: 120px;
+    width: 510px;
+    position: absolute;
+    top: 50px;
+    font-style: italic;
+}
+
+.headerPortraitObscurer {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: white !important;
+    z-index: 1;
+}
+
+.headerPortraitObscurerRect {
+    width: 50px;
+    height: 110px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: white !important;
+    z-index: 1;
+}
+
+.legalSize {
+    min-height: 11.0in;
+    max-height: 11.0in;
+    min-width: 8.5in;
+    max-width: 8.5in;
+}
+
+.mainHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    border-top-right-radius: 50px;
+    z-index: 1;
+}
+
+.mainHeader > address {
+    font-style: normal;
+    padding: 10px;
+    width: 100%
+}
+
+.mainHeader > address :first-child {
+    padding-left: 108px;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.mainHeader > address :nth-child(2) {
+    padding-left: 60px;
+}
+
+.mainHeader > address :nth-child(3) {
+    padding-left: 60px;
+}
+
+.mainHeader > address :nth-child(4) {
+    float: right;
+    padding-right: 60px;
+    font-weight: bold;
+    color: #284A6D;
+}
+
+.headerCurve {
+    right: 0px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #d7e4ed !important;
+    top: 0px;
+    border-top-right-radius: 50px;
+}
+
+.headerCurveBackground {
+    right: 0px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: white !important;
+    top: 0px;
+}
+
+.headerCurveBottom {
+    right: 0px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #d7e4ed !important;
+    bottom: 0px;
+    border-bottom-right-radius: 50px;
+}
+
+.headerCurveBottomBackground {
+    right: 0px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: white !important;
+    bottom: 0px;
+}
+
+.personalEmail:after {
+    content: "paul.d.evans@gmail.com";
+    visibility: visible;
+}
+
+.portrait {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+.portraitConnectionToTimeLine {
+    position: absolute;
+    width: 100px;
+    height: 45px;
+    border-bottom: 4px solid #7798b0 !important;
+    transform: translateY(38px) translateX(56px) rotate(55deg);
+}
+
+.portraitImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100px;
+    height: 122px;
+}
+
+.portraitImage1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 72px;
+    height: 88px;
+}
+
+.resume {
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+.resume .mainContent {
+    position: absolute;
+    top: 100px;
+}
+
+.rightBar {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 150px;
+    min-height: 11in;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.rightBar > article {
+    margin-top: 33px;
+}
+
+.rightBar article:first-of-type {
+    margin-top: 7px;
+}
+
+.rightBar > article header {
+    font-weight: bold;
+}
+
+.rightBar > article ul {
+    margin: 0;
+    list-style: disc inside;
+    padding-left: 6px;
+}
+
+.rightBar > article:nth-child(1) {
+    padding-top: 20px;
+}
+
+/*
+.rightBar > article:nth-child(2) {
+    margin-top: 8px;
+}
+
+.rightBar > article:nth-child(3) {
+    margin-top: 37px;
+}
+
+.rightBar > article:nth-child(4) {
+    margin-top: 70px;
+}
+
+.rightBar > article:nth-child(5) {
+    margin-top: 20px;
+}
+
+.rightBar > article:nth-child(6) {
+    margin-top: 40px;
+}
+*/
+
+.rightBarSpacer {
+    background-color: #ffffff !important;
+    height: 40px;
+    width: 40px;
+    content: "";
+}
+
+.timeLineArticle {
+    text-align: left;
+}
+
+.timeLineArticle > header {
+    display: none;
+    border-bottom: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.timeLineDetail > article {
+    width: 505px
+}
+
+.timeLineDetail > header {
+    font-size: 12px;
+    position: absolute;
+    margin-top: 0;
+    margin-left: -145px;
+    text-align: right;
+    width: 100px;
+}
+
+.timeLineDetail > time {
+    font-size: 12px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -145px;
+    text-align: right;
+    width: 100px;
+}
+
+.timeLineDetail > time > span.toDate {
+    display: block;
+}
+
+.timeLineDetailDescription > p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.timeLineIcon {
+    margin-top: 16px;
+    margin-left: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #7798b0, inset !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+/* trying background-image rather than image tag for the cover css style for the lollipop */
+.timeLineIcon img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.timeLineIconDs {
+    background-image: url("../img/dsicon.png") !important;
+}
+
+.timeLineIconLionhead {
+    background-image: url("../img/lionheadicon.png") !important;
+}
+
+.timeLineIconMaxPlay {
+    background-image: url("../img/maxplayicon.png") !important;
+}
+
+.timeLineIconPortalarium {
+    background-image: url("../img/portalariumicon.png") !important;
+}
+
+.timeLineIconSonar {
+    background-image: url("../img/sonaricon.png") !important;
+}
+
+.timeLineIconSouthamptonInstitute {
+    background-image: url("../img/southamptoninstituteicon.png") !important;
+}
+
+.timeLineVertical {
+    list-style: none;
+    position: relative;
+    padding-top: 4px;
+}
+
+.timeLineVertical::before {
+    /* this is the vertical line */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 114px;
+    height: 100%;
+    width: 4px;
+    background: #7798b0 !important;
+}
+
+.timeLineVertical > li {
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                          http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+}
