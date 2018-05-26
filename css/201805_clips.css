@@ -1,0 +1,639 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #E6D1CB;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Golden Ratio: 1.61803398875 */
+
+@page {
+    margin: 0in;
+    size: letter portrait;
+}
+
+article {
+    page-break-before: avoid;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+body > section {
+    background-color: #FFFFFF;
+    height: 11.0in;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    page-break-after: always;
+    page-break-before: avoid;
+    width: 8.5in;
+}
+
+/*
+body > section > address {
+    margin-left: 0in;
+    margin-right: 0.25in;
+    top: 0.25in;
+    left: 2.25in;
+}
+
+body > section > address i {
+    margin-left: 0.125in;
+}
+
+body > section > address > a[rel="author"] {
+    font-weight: bold;
+}
+
+*/
+
+body > section > address {
+    position: absolute;
+    top: 2.25in;
+}
+
+body > section > address > span {
+    font-size: 14px;
+    left: 0.1in;
+    margin-left: 0in;
+    margin-right: 0.25in;
+    position: absolute;
+}
+
+body > section > address > a[rel="author"] {
+    font-weight: bold;
+    margin-left: 0.25in;
+}
+
+body > section > address > span > i.addressInfo {
+    clear: left;
+    display: inline;
+}
+
+body > section > article {
+    position: relative;
+    margin-left: 0.25in;
+    margin-right: 0.25in;
+}
+
+body > section .experience {
+    position: absolute;
+    top: 2.25in;
+}
+
+body > section > .experience ul {
+    margin-top: 0px;
+    list-style: none;
+    position: relative;
+    padding-left: 0px;
+    text-align: justify;
+}
+
+body > section > .experience > ul > li > article > header {
+    font-weight: bold;
+    margin-left: 1.75in;
+    padding-left: 0.50in;
+}
+
+body > section > .experience > ul > li > article > header > time {
+    font-weight: bold;
+    position: absolute;
+    right: 0.25in;
+}
+
+body > section > .experience > ul > li > article > article {
+    margin-left: 2.25in;
+    margin-right: 0.25in;
+}
+
+body > section > .experience > ul > li > article > article > p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+body > section > .experience > ul > li > article .experienceHeaderDecoration {
+    display:inline-block;
+    border-bottom:0.25in solid rgba(0,0,0,0);
+    border-right:0.25in solid rgba(22, 84, 144, 1.0);
+    left: 1.75in;
+    position: absolute;
+}
+
+body > section > article > span .skillsDecoration {
+    display:inline-block;
+    border-bottom:0.25in solid rgba(0,0,0,0);
+    border-right:0.25in solid rgba(22, 84, 144, 1.0);
+    left: 1.75in;
+    position: absolute;
+}
+
+body > section:last-child {
+    padding-bottom: 0.25in;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+.goal {
+    text-align: left;
+    font-style: italic;
+    top:0.25in;
+    margin-left: 2.25in;
+}
+
+.goal span {
+    display: block;
+}
+
+.color1bg {
+    background-color: #0D2136;
+}
+
+.color1fg {
+    color: #0D2136;
+}
+
+.color2bg {
+    background-color: #165490;
+}
+
+.color2fg {
+    color: #165490;
+}
+
+.color3bg {
+    background-color: #1E68B2;
+}
+
+.color3fg {
+    color: #1E68B2;
+}
+
+.color3abg {
+    background-color: #509ae4;
+}
+
+.color3afg {
+    color: #509ae4;
+}
+
+.color4bg {
+    background-color: #61B7D1;
+}
+
+.color4fg {
+    color: #61B7D1;
+}
+
+.color5bg {
+    background-color: #E6D1CB;
+}
+
+.color5fg {
+    color: #E6D1CB;
+}
+
+.column1 {
+    height: 100%;
+    position: absolute;
+    width: 2in;
+}
+
+.legalSize {
+    min-height: 11.0in;
+    max-height: 11.0in;
+    min-width: 8.5in;
+    max-width: 8.5in;
+}
+
+.legalSizeContentHorizontal {
+    left: 60px;
+    right: 60px;
+}
+
+.personalEmail:after {
+    content: "paul.d.evans@gmail.com";
+    visibility: visible;
+}
+
+.portrait {
+}
+
+.portraitImage {
+    bottom: 0;
+    float: left;
+    height: 163px;
+    left: 0;
+    margin-left: 0.25in;
+    margin-top: 0.25in;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 100px;
+}
+
+.portraitImagePaulE {
+    bottom: 0;
+    float: left;
+    height: 327px;
+    left: 0;
+    margin-left: 0.25in;
+    margin-top: 0.25in;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 200px;
+}
+
+.portraitImage2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 72px;
+    height: 88px;
+}
+
+.resumePage {']
+'
+    left: 0px;
+    position: relative;
+    top: 0px;
+}
+
+.timeLineArticle {
+}
+
+.timeLineArticle > header {
+    display: none;
+    border-bottom: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.timeLineDetail > article {
+}
+
+.timeLineDetail > header {
+    font-weight: bold;
+    display: inline;
+}
+
+.timeLineDetail > time {
+    position: absolute;
+    right: 0px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.timeLineDetailDescription > p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.timeLineIcon {
+    display: none;
+    margin-top: 16px;
+    margin-left: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #7798b0, inset !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+/* trying background-image rather than image tag for the cover css style for the lollipop */
+.timeLineIcon img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.timeLineIconDs {
+    background-image: url("../img/dsicon.png") !important;
+}
+
+.timeLineIconLionhead {
+    background-image: url("../img/lionheadicon.png") !important;
+}
+
+.timeLineIconMaxPlay {
+    background-image: url("../img/maxplayicon.png") !important;
+}
+
+.timeLineIconPortalarium {
+    background-image: url("../img/portalariumicon.png") !important;
+}
+
+.timeLineIconSonar {
+    background-image: url("../img/sonaricon.png") !important;
+}
+
+.timeLineIconSouthamptonInstitute {
+    background-image: url("../img/southamptoninstituteicon.png") !important;
+}
+
+.timeLineVertical {
+    margin-top: 10px;
+    list-style: none;
+    position: relative;
+    padding-left: 0px;
+    text-align: justify;
+}
+
+.timeLineVertical > li {
+    position: relative;
+    padding-left: 0px;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    /*
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {*/
+        /*
+        background: transparent !important;
+        */
+    /*
+        color: #000 !important; *//* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+    /*
+        box-shadow: none !important;
+        text-shadow: none !important;
+
+    }
+*/
+    a,
+    a:visited {
+        text-decoration: none;
+    }
+
+    /*
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    */
+
+    a[href]:after {
+        content: none;
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+@media print {
+    * {-webkit-print-color-adjust: exact;}
+}
