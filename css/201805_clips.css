@@ -143,7 +143,7 @@ body > section > address > a[rel="author"] {
 
 body > section > address {
     position: absolute;
-    top: 2.25in;
+    top: 3.25in;
 }
 
 body > section > address > span {
@@ -213,13 +213,67 @@ body > section > .experience > ul > li > article .experienceHeaderDecoration {
     position: absolute;
 }
 
-body > section > article > span .skillsDecoration {
-    display:inline-block;
-    border-bottom:0.25in solid rgba(0,0,0,0);
-    border-right:0.25in solid rgba(22, 84, 144, 1.0);
-    left: 1.75in;
+body > section > article.skills {
+    left: 2.25in;
+    margin-left: 0in;
+    margin-right: 0in;
+    position: absolute;
+    right: 0.25in;
+    top: 0.75in;
+}
+
+body > section > article.skills > article header
+{
+    font-weight: bold;
+    margin: 0in;
+}
+
+body > section > article.skills > article ul
+{
+    list-style-type: none;
+    margin: 0in;
+    overflow: hidden;
+    padding-left: 0.125in;
+    position: relative;
+    text-align: justify;
+}
+
+body > section > article.skills > article > ul > li
+{
+    float: left;
+    margin-right: 0.125in;
+}
+
+body > section > article > span.skillsDecoration  {
+    display: block;
     position: absolute;
 }
+
+body > section > article > span.skillsDecoration :first-child {
+    display: inline-block;
+    border-bottom: 0.0625in solid rgba(0,0,0,0);
+    border-right: 0.0625in solid rgba(22, 84, 144, 1.0);
+    left: 0in;
+    position: absolute;
+}
+
+body > section > article > span.skillsDecoration :nth-child(2) {
+    display: block;
+    background-color: #165490;
+    left: 0.0625in;
+    width: 5.875in;
+    height: 0.0625in;
+    position: absolute;
+}
+
+body > section > article > span.skillsDecoration :nth-child(3) {
+    display: inline-block;
+    border-bottom: 0.0625in solid rgba(0,0,0,0);
+    border-left: 0.0625in solid rgba(22, 84, 144, 1.0);
+    left: 5.9375in;
+    position: absolute;
+}
+
 
 body > section:last-child {
     padding-bottom: 0.25in;
@@ -237,6 +291,7 @@ html {
     font-style: italic;
     top:0.25in;
     margin-left: 2.25in;
+    text-align: justify;
 }
 
 .goal span {
@@ -315,6 +370,32 @@ html {
 }
 
 .portrait {
+}
+
+.portraitImage201805 {
+    bottom: 0;
+    float: left;
+    height: 264px;
+    left: 0;
+    margin-left: 0.25in;
+    margin-top: 0.25in;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 124px;
+}
+
+.portraitImage201806 {
+    bottom: 0;
+    float: left;
+    height: 265px;
+    left: 0;
+    margin-left: 0.125in;
+    margin-top: 0.25in;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 193px;
 }
 
 .portraitImage {
