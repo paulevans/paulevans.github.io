@@ -141,12 +141,34 @@ body > section > address > a[rel="author"] {
 
 */
 
-body > section > address {
+body > section > address.author {
+    border-bottom:  solid rgba(22, 84, 144, 1.0);
+    border-left:  solid rgba(22, 84, 144, 1.0);
+    border-width: 1px;
+    display: block;
+    font-size: 200%;
+    font-weight: bold;
+    height: 0.5in;
+    left: 0in;
+    margin-left: 1.75in;
+    position: relative;
+    right: 0in;
+}
+
+body > section > address.author > a {
+    display: inline-block;
+    left: 0in;
+    margin-left: 0.5in;
+    margin-right: 0.25in;
+    position: absolute;
+}
+
+body > section > address.addressDetail {
     position: absolute;
     top: 3.25in;
 }
 
-body > section > address > span {
+body > section > address.addressDetail > span {
     font-size: 14px;
     left: 0.1in;
     margin-left: 0in;
@@ -154,12 +176,12 @@ body > section > address > span {
     position: absolute;
 }
 
-body > section > address > a[rel="author"] {
+body > section > address.addressDetail > a[rel="author"] {
     font-weight: bold;
     margin-left: 0.25in;
 }
 
-body > section > address > span > i.addressInfo {
+body > section > address.addressDetail > span > i.addressInfo {
     clear: left;
     display: inline;
 }
@@ -170,9 +192,16 @@ body > section > article {
     margin-right: 0.25in;
 }
 
+body > section:first-of-type.resumePage .experience {
+    top: 1.75in;
+}
+
+body > section:nth-of-type(2).resumePage .experience {
+    top: 0.25in;
+}
+
 body > section .experience {
     position: absolute;
-    top: 2.25in;
 }
 
 body > section > .experience ul {
@@ -184,6 +213,10 @@ body > section > .experience ul {
 }
 
 body > section > .experience > ul > li > article > header {
+    border-bottom:  solid rgba(22, 84, 144, 1.0);
+    border-left:  solid rgba(22, 84, 144, 1.0);
+    border-top:  solid rgba(22, 84, 144, 1.0);
+    border-width: 1px;
     font-weight: bold;
     margin-left: 1.75in;
     padding-left: 0.50in;
@@ -196,13 +229,13 @@ body > section > .experience > ul > li > article > header > time {
 }
 
 body > section > .experience > ul > li > article > article {
-    margin-left: 2.25in;
-    margin-right: 0.25in;
+    margin-left: 2.5in;
+    margin-right: 0.5in;
+    margin-top: 0.125in;
 }
 
 body > section > .experience > ul > li > article > article > p {
     margin-top: 0;
-    margin-bottom: 10px;
 }
 
 body > section > .experience > ul > li > article .experienceHeaderDecoration {
@@ -214,12 +247,12 @@ body > section > .experience > ul > li > article .experienceHeaderDecoration {
 }
 
 body > section > article.skills {
-    left: 2.25in;
-    margin-left: 0in;
-    margin-right: 0in;
+    left: 0in;
+    margin-left: 0.125in;
+    margin-right: 0.25in;
     position: absolute;
-    right: 0.25in;
-    top: 0.75in;
+    right: 6.5in;
+    top: 4.25in;
 }
 
 body > section > article.skills > article header
@@ -233,23 +266,60 @@ body > section > article.skills > article ul
     list-style-type: none;
     margin: 0in;
     overflow: hidden;
-    padding-left: 0.125in;
+    padding-left: 0in;
     position: relative;
     text-align: justify;
 }
 
 body > section > article.skills > article > ul > li
 {
+    float: none;
+    margin-right: 0.125in;
+}
+
+body > section > article.skills > article > ul > li > ul > li
+{
+    text-align: left;
+}
+
+body > section > article.skillsBox {
+    left: 2.25in;
+    margin-left: 0in;
+    margin-right: 0in;
+    position: absolute;
+    right: 0.25in;
+    top: 0.75in;
+}
+
+body > section > article.skillsBox > article header
+{
+    font-weight: bold;
+    margin: 0in;
+}
+
+body > section > article.skillsBox > article ul
+{
+    list-style-type: none;
+    margin: 0in;
+    overflow: hidden;
+    padding-left: 0.125in;
+    position: relative;
+    text-align: justify;
+}
+
+body > section > article.skillsBox > article > ul > li
+{
     float: left;
     margin-right: 0.125in;
 }
 
-body > section > article > span.skillsDecoration  {
-    display: block;
+body > section > article > span.skillsBoxDecoration  {
+    /* display: block; */
+    display: none;
     position: absolute;
 }
 
-body > section > article > span.skillsDecoration :first-child {
+body > section > article > span.skillsBoxDecoration :first-child {
     display: inline-block;
     border-bottom: 0.0625in solid rgba(0,0,0,0);
     border-right: 0.0625in solid rgba(22, 84, 144, 1.0);
@@ -257,7 +327,7 @@ body > section > article > span.skillsDecoration :first-child {
     position: absolute;
 }
 
-body > section > article > span.skillsDecoration :nth-child(2) {
+body > section > article > span.skillsBoxDecoration :nth-child(2) {
     display: block;
     background-color: #165490;
     left: 0.0625in;
@@ -266,7 +336,7 @@ body > section > article > span.skillsDecoration :nth-child(2) {
     position: absolute;
 }
 
-body > section > article > span.skillsDecoration :nth-child(3) {
+body > section > article > span.skillsBoxDecoration :nth-child(3) {
     display: inline-block;
     border-bottom: 0.0625in solid rgba(0,0,0,0);
     border-left: 0.0625in solid rgba(22, 84, 144, 1.0);
@@ -290,12 +360,20 @@ html {
     text-align: left;
     font-style: italic;
     top:0.25in;
-    margin-left: 2.25in;
+    margin-left: 2.5in;
     text-align: justify;
 }
 
 .goal span {
     display: block;
+}
+
+.headerDecoration {
+    display:inline-block;
+    border-bottom:0.25in solid rgba(0,0,0,0);
+    border-right:0.25in solid rgba(22, 84, 144, 1.0);
+    left: 1.75in;
+    position: absolute;
 }
 
 .color1bg {
@@ -350,6 +428,10 @@ html {
     height: 100%;
     position: absolute;
     width: 2in;
+}
+
+.jobRole {
+    font-weight: bold;
 }
 
 .legalSize {
@@ -498,6 +580,7 @@ html {
 .timeLineIconDs {
     background-image: url("../img/dsicon.png") !important;
 }
+
 
 .timeLineIconLionhead {
     background-image: url("../img/lionheadicon.png") !important;
