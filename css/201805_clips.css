@@ -464,6 +464,10 @@ html {
     right: 60px;
 }
 
+.mobilePhone {
+    visibility: hidden;
+}
+
 .personalEmail:after {
     content: "paul.d.evans@gmail.com";
     visibility: visible;

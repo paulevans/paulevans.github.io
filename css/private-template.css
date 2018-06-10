@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+span.physicalAddress:after {
+    content: "Address by request";
+}
+
+span.mobilePhone:after {
+    content: "";
+}
+
+/*
+span.mobilePhone {
+    visibility: visible;
+}
+
+i.mobilePhone  {
+    visibility: visible;
+}
+*/
