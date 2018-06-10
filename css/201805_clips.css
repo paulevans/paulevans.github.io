@@ -256,7 +256,7 @@ body > section > article.skills1stPage {
     margin-right: 0.25in;
     position: absolute;
     right: 6.5in;
-    top: 4.170in;
+    top: 4.0in;
 }
 
 body > section > article.skills2ndPage {
@@ -265,7 +265,7 @@ body > section > article.skills2ndPage {
     margin-right: 0.25in;
     position: absolute;
     right: 6.5in;
-    top: 3.26in;
+    top: 3.08in;
 }
 
 body > section > article.skills > article header
@@ -277,7 +277,7 @@ body > section > article.skills > article header
 body > section > article.skills > article ul
 {
     list-style-type: none;
-    margin-bottom: 1em;
+    margin-bottom: 1.4em;
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
@@ -292,7 +292,7 @@ body > section > article.skills > article > ul > li
     float: none;
     margin-bottom: 0em;
     margin-right: 0.125in;
-    margin-top: 0em;
+    margin-top: 1em;
 }
 
 body > section > article.skills > article > ul > li > ul > li
