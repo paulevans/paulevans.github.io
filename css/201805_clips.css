@@ -141,6 +141,10 @@ body > section > address > a[rel="author"] {
 
 */
 
+body > section > address {
+    z-index: 1;
+}
+
 body > section > address.author {
     border-bottom:  solid rgba(22, 84, 144, 1.0);
     border-left:  solid rgba(22, 84, 144, 1.0);
