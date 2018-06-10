@@ -151,6 +151,7 @@ body > section > address.author {
     height: 0.5in;
     left: 0in;
     margin-left: 1.75in;
+    padding-top: 0.5em;
     position: relative;
     right: 0in;
 }
@@ -165,13 +166,13 @@ body > section > address.author > a {
 
 body > section > address.addressDetail {
     position: absolute;
-    top: 3.25in;
+    top: 20.4em;
 }
 
 body > section > address.addressDetail > span {
-    font-size: 14px;
+    font-size: 13px;
     left: 0.1in;
-    margin-left: 0in;
+    margin-left: 1.4em;
     margin-right: 0.25in;
     position: absolute;
 }
@@ -225,7 +226,7 @@ body > section > .experience > ul > li > article > header {
 body > section > .experience > ul > li > article > header > time {
     font-weight: bold;
     position: absolute;
-    right: 0.25in;
+    right: 2em;
 }
 
 body > section > .experience > ul > li > article > article {
@@ -252,8 +253,7 @@ body > section > article.skills {
 
 body > section > article.skills1stPage {
     left: 0in;
-    margin-left: 0.125in;
-    margin-right: 0.25in;
+    margin-left: 2em;
     position: absolute;
     right: 6.5in;
     top: 4.0in;
@@ -261,8 +261,7 @@ body > section > article.skills1stPage {
 
 body > section > article.skills2ndPage {
     left: 0in;
-    margin-left: 0.125in;
-    margin-right: 0.25in;
+    margin-left: 2em;
     position: absolute;
     right: 6.5in;
     top: 3.08in;
@@ -379,6 +378,7 @@ html {
     font-style: italic;
     top:0.25in;
     margin-left: 2.5in;
+    margin-right: 0.5in;
     text-align: justify;
 }
 
@@ -490,8 +490,8 @@ html {
     float: left;
     height: 265px;
     left: 0;
-    margin-left: 0.125in;
-    margin-top: 0.25in;
+    margin-left: 1em;
+    margin-top: 3em;
     right: 0;
     position: absolute;
     top: 0;
